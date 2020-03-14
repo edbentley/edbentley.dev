@@ -16,14 +16,18 @@ const ContactPage = () => (
     >
       <Header page="contact" />
       <main className="app-width" style={{ marginTop: "28px" }}>
-        <form name="contact" method="POST" data-netlify="true" className="flex-column">
+        <form
+          className="flex-column"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          {/* Hidden field required for Netlify */}
+          <input type="hidden" name="form-name" value="contact" />
           <label className="flex-column mb16">
             Message
-            <textarea
-              name="message"
-              rows="5"
-              style={{ marginTop: "4px" }}
-            />
+            <textarea name="message" rows="5" style={{ marginTop: "4px" }} />
           </label>
           <div
             className="flex"
@@ -31,11 +35,7 @@ const ContactPage = () => (
           >
             <label className="flex-column mb16 flex1">
               Your email
-              <input
-                type="email"
-                name="email"
-                style={{ marginTop: "4px" }}
-              />
+              <input type="email" name="email" style={{ marginTop: "4px" }} />
             </label>
             <button type="submit" style={{ margin: "8px 0 0 8px" }}>
               Send
