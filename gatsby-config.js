@@ -24,6 +24,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-dev",
+      options: {
+        username: "edbentley",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Ed Bentley`,

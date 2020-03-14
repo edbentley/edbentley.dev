@@ -58,8 +58,15 @@ textarea {
   flex: 1;
 }
 
+.m0 {
+  margin: 0;
+}
 .mb16 {
   margin-bottom: 16px;
+}
+
+.hover:hover * {
+  opacity: 0.8;
 }
 
 .app-width {
