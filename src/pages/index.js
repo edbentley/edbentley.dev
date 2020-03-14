@@ -1,21 +1,33 @@
+import "../style.css"
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
+import Header from "../components/header"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <>
+    <SEO title="About" />
+    <div
+      className="flex-column"
+      style={{
+        width: "100vw",
+        alignItems: "center",
+      }}
+    >
+      <Header page="about" />
+      <main className="app-width" style={{ marginTop: "8px" }}>
+        <p>Hi, I'm a software developer in London.</p>
+        <p>I'm currently working on some open source projects.</p>
+        <p>
+          I'm also an indie game developer with titles such as{" "}
+          <a href="https://www.flukedude.com/theimpossiblegame">
+            The Impossible Game
+          </a>
+          .
+        </p>
+      </main>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </>
 )
 
 export default IndexPage

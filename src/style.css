@@ -1,0 +1,84 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: #166bfe;
+}
+
+body {
+  font-size: 20px;
+  margin: 0;
+}
+
+input {
+  font-size: 1em;
+  line-height: 32px;
+  border-radius: 5px;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+button {
+  width: 80px;
+  background-color: #166bfe;
+  border: unset;
+  border-radius: 15px;
+  font-size: 0.75em;
+  color: white;
+  height: 32px;
+}
+
+textarea {
+  font-size: 1em;
+  line-height: 32px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.app-width {
+  width: 608px;
+}
+.header {
+  margin-top: 80px;
+}
+
+@media (max-width: 624px) {
+  .app-width {
+    width: calc(100% - 16px);
+  }
+  .header {
+    margin-top: 16px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 800;
+  }
+}
