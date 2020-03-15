@@ -51,7 +51,7 @@ const Header = ({ page }) => (
         style={{
           marginRight: "16px",
           padding: "8px 4px",
-          borderBottom: page === "about" ? "3px solid #166bfe" : "none",
+          borderBottom: page === "" ? "3px solid #166bfe" : "none",
         }}
       >
         About
