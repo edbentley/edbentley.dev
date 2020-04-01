@@ -2,17 +2,19 @@ import React from "react"
 
 import Header from "./header"
 
-const Layout = ({ children, uri }) => (
-  <div
-    className="flex-column"
-    style={{
-      width: "100vw",
-      alignItems: "center",
-    }}
-  >
-    <Header page={uri.slice(1)} />
-    {children}
-  </div>
-)
+const Layout = ({ children, location: { pathname } }) => {
+  return (
+    <div
+      className="flex-column"
+      style={{
+        width: "100vw",
+        alignItems: "center",
+      }}
+    >
+      <Header page={pathname.replace(/\//g, "")} />
+      {children}
+    </div>
+  )
+}
 
 export default Layout
